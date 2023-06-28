@@ -9,3 +9,5 @@ Tech stack used:
 >It has three pages in total.
 =>One for Displaying all posts , one for Adding Post , One for reading the individual post.
 
+>Link to Hosted Website.
+=> https://myblog-vrl8.onrender.com/
