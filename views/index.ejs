@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="/Style.css">
+</head>
+
+<body>
+    <div class=" d-flex flex-column justify-content-center align-items-center">
+    <h1>Blog Website</h1>
+    <br>
+    <h2>Here Your Blogs</h2>
+    <br>
+    <button class="btn btn-success"><a href="/AddPost" class="text-light" >Add Post</a></button>
+
+   <div class="Main d-flex justify-content-center flex-wrap mx-2 my-2">
+    <% if(Posts.length > 0){ %>
+      <% Posts.map((elem)=>{ %>
+  
+        <div class="card mt-2 mx-2" style="width: 18rem;">
+            <div class="card-body border m-2 rounded ">
+              <h5 class="card-title fs-2 "><%=elem.Title%></h5>
+              <p class="card-text fs-4 text-justify"><%=elem.Description%></p>
+              <h4 class="card-title fs-5"><%=elem.Date%></h4>
+              <a href="/<%=elem.Title%>" class="btn btn-primary font-weight-bolder Read" >Read More</a>
+            </div>
+          </div>
+          <%  }) %>
+
+ <%   } else{ %>
+
+  <div class="card mt-2" style="width: 18rem;">
+  <h5 class="card-title text-center p-5">Nothing To Show Here!!</h5>
+  </div>
+
+<%  } %>
+ 
+   </div>
+     
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card > a {
+    font-weight: bold;
+  }
+  
+  .card > p {
+    font-size: 2rem;
+  }
+  
+  .AddPost:hover {
+    background-color: red;
+    color: #fff;
+  }
+  
+  .Read {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  .Main {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  /* Improved Styles */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card > a {
+    color: #333;
+  }
+  
+  .card > p {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .AddPost {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AddPost:hover {
+    background-color: #ff0000;
+  }
+  
+  .Read {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #777;
+  }
+  
+  .Main {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  @media (max-width: 600px) {
+    .card > p {
+      font-size: 1.5rem;
+    }
+  
+    .AddPost {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .Read {
+      font-size: 0.7rem;
+    }
+  
+    .Main {
+      padding: 0.8rem;
+    }
+  }
+  
